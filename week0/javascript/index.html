@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week_0 JavaScript Assigment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" >
+            window.addEventListener("load", function(){
+    var inputMessage = document.getElementById('input_message');
+    var inputCount = document.getElementById('input_count');
+    var buttonPrint = document.getElementById('button_print');
+    var outputContxt = document.getElementById('contxt');
+
+    var inputColor=document.getElementById('input_color');
+    var inputBackground=document.getElementById('input_background');
+    
+    buttonPrint.addEventListener("click",function(){
+        createElements(inputCount.value, inputMessage.value,inputColor.value,inputBackground.value, outputContxt);
+    });
+
+    
+    
+
+    
+});
+
+function createElements(count,message,txtColor,backColor,outputContxt) {
+    var i;
+    for (i = 0; i < count; i++) {
+        var pTag = document.createElement("p");
+        var text = document.createTextNode(message);
+        pTag.appendChild(text);
+         outputContxt.appendChild(pTag);
+        outputContxt.appendChild(pTag).style.color=txtColor;
+        outputContxt.appendChild(pTag).style.backgroundColor=backColor;
+    }
+
+}
+ 
+
+
+    
+ 
+        </script>
+    </head>
+
+   
+ 
+    <body>
+        <div>
+        	<p>
+        		<input id="input_message" type="text" placeholder="Message" />
+        	</p>
+        	<p>
+        		<input id="input_count" type="number" placeholder="Count" />
+        	</p>
+            <p>
+                <input id="input_color" type="text" placeholder="Text Color" />
+            </p>
+            <p>
+                <input id="input_background" type="text" placeholder="Background Color" />
+            </p>
+        	<p>
+        		<button id="button_print" type="button">PRINT</button>
+        	</p>
+            <p>
+                <button id="button_clear" type="button" onclick="window.location.reload()">CLEAR</button>
+           </p>
+        </div>
+        <div id="contxt">
+        
+        </div>
+        
+    </body>
+</html>

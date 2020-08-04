@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Discount</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="main1.js"></script>
+    </head>
+    <body>
+    <div>
+        Sale Price   <input type="number" id="saleprice" placeholder="Sale Price" />
+    </div>  <br>   
+    <div>
+        Discount Price  <input type="number" id="discountprice" placeholder="Discount" />
+    </div><br>
+    <button id="total" onclick="getPrice()">Total</button> 
+    <div>
+        New Sale     <input id="newsale" placeholder="New Sale" />
+    </div><br>
+    <div>
+        Decrease amount  <input id="decrease" placeholder="Decrease" />
+    </div>
+    <script type="text/javascript">
+        getPrice=function() {
+            // body...
+            var sale=Number(document.getElementById("saleprice").value);
+            var discount=Number(document.getElementById("discountprice").value)/100;
+            var totalValue=sale-(sale * discount);
+            var decreaseamount=totalValue - sale;
+            document.getElementById("newsale").value = totalValue.toFixed(2);
+            document.getElementById("decrease").value = decreaseamount;
+        }
+    </script>
+   </body>
+</html>
