@@ -1,0 +1,29 @@
+Case Study-1
+Task1: Requirement definition-
+A2Z  is a popular banded shoe selling shop in Yangon. It also provides shoe repairing services to its consumers on demand.
+The records of their sales, customers, different type of shoe, daily order, stocks as well as customer services need to write down book 
+manually. They want to run in LAN network system with Point-Of-Sale system.
+
+Task2: Data requirement-
+Shoe list and price, Sale record, Ever customer data, Daily order record, Staff name and salary, Discount.
+ 
+Task3: Functional requirement-
+-Keeping the record of customer’s login
+-Keeping the records of  shoe list in category
+-Keeping the shop of location
+-Keeping the daily sell and order
+-Keeping the record of customer service
+-System can add stock
+-System can update stock
+ -System can delete stock
+-System can update password (Admin & Staff)
+
+Task4: Non-Functional Requirement-
+-Secure access of confidential data(customer’s details)
+-The system  which can run any  platform.
+-The system have button with user friendly.
+-The system can save stock into the database safely
+-The system can create a backup database file after every transaction
+(sales, stock, service, update of authentication details).
+-For security issues only admin can change the password on behalf of staffs.
+-Staffs can only access this system for sales, service and checking reports.

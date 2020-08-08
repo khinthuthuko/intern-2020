@@ -1,0 +1,20 @@
+Case Study 2
+Task 1: Requirement Definition-
+-Fast & Trust Delivery Service is servicing the customer’s delivery services from and to with 8 staff at Yangon City. 
+Their customer is Online shop and Users whose cost is different according their township. Their team collect  the delivery information from facebook messenger. The delivery Staff start deliver with delivery assigned and write down all records in book manually. They want to run Delivery Management System in WAN Network.
+Task 2: Data Requirement-
+-Online Shopping Name, Way Count, User Address, Another user address, Delivery fees, Deliver profit, Bus cost, Daily profit, Staff  salary and name, Our income, Deli no. 
+
+Task 3:Functional Requirement-
+-Keeping the record of customer’s login
+-Keeping the record of online shopping name, count name, user address and another user address
+-System  can calculate the cost of delivery fees, daily profit
+- System can update password (Admin & Staff)
+
+Task 4:Non-Functional Requirement –
+- Secure access of confidential data(customer’s details)
+-System  which can run any  platform
+-Fast Response Time For User Login
+-Customer get product in right time
+-Customer is comfortable with buying things
+   
